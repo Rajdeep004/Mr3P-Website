@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling */
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Jost for primary headings and titles */
+.header,
+.intro-title,
+.projects .section-title,
+.experience .section-title,
+.final-cta .cta-title,
+.quote {
+    font-family: 'Jost', sans-serif;
+}
+
+/* Montserrat for secondary text and body */
+.subtitle,
+.intro-subtitle,
+.section-subtitle,
+.experience-grid p,
+.cta-subtitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) -20.37%, rgba(52, 52, 52, 0.60) 104.4%);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(100px);
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #B7B7B7;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #FFFFFF;
+}
+
+.resume {
+    color: #FFFFFF;
+}
+
+.logo {
+    max-width: 100px;
+    /* Constrain the logo size */
+    max-height: 100px;
+    /* Constrain the logo size */
+    margin-right: 0px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    animation: pulse 5s ease-in-out infinite;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the logo on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background: transparent;
+        opacity: 1;
+
+    }
+
+    50% {
+        background: transparent;
+        transform: scale(1.04);
+        opacity: 0.8;
+
+    }
+
+    100% {
+        background: transparent;
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
+
+
+/* Main Title */
+.main-title {
+    color: #D0D0D0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 96px;
+    position: relative;
+    display: inline-block;
+    animation: slideIn 1s ease-out;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    margin-bottom: 0px;
+    user-select: none;
+
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    /* Adjust the position of the underline */
+    left: 0;
+    width: 100%;
+    height: 5px;
+    /* Height of the underline */
+    background: #ffffff;
+    /* Underline color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: background 0.3s ease;
+
+}
+
+.main-title:hover::after {
+    animation: underline-animation 1.5s ease-in-out 1 forwards;
+    /* Trigger the animation on hover */
+    background: #0affa9;
+    /* Color change on hover */
+
+}
+
+
+.main-title:hover {
+
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for minimal effect */
+}
+
+.sparkle {
+    width: 50px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+
+.sparkle-container {
+    position: absolute;
+    top: -50px;
+    /* Adjust this value to move the sparkle image above the text */
+    left: calc(50% + 1.4em);
+    /* Adjust this value to center the sparkle image over the "C" */
+    transform: translateX(-50%);
+    z-index: 1;
+    /* Ensure the sparkle is above the text */
+}
+
+.epic {
+    position: relative;
+    display: inline-block;
+}
+
+/* Sparkle Animation */
+.main-title:hover .sparkle {
+    animation: glow 1.5s infinite;
+    /* Trigger the glow animation */
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+        transform: scale(1);
+        rotate: 0deg;
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+        transform: scale(1.1);
+        rotate: 5deg;
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+        transform: scale(1);
+        rotate: 0deg;
+    }
+}
+
+@keyframes underline-animation {
+    0% {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+
+    50% {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    75% {
+        transform: scaleX(0);
+        transform-origin: bottom left;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+/* Main Title Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Subtitle */
+.subtitle-line {
+    color: #929292;
+    font-family: 'Jost', sans-serif;
+    /* Ensure Jost is applied */
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* margin: 50px 0; */
+}
+
+
+
+
+/* Introduction Section */
+.intro-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 64px;
+    background: linear-gradient(45deg, #CBB792 -1.49%, #0affa9 89.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+    margin-top: 96px;
+    transition: background-position 0.5s ease, text-shadow 0.5s ease;
+    user-select: none;
+}
+
+.intro-title:hover {
+    background: linear-gradient(101deg, #0affa9 -6.49%, #CBB792 89.27%);
+    /* Change gradient on hover */
+    /* background-size: 200% 200%; Ensure the gradient covers the text */
+    background-position: 100% 0%;
+    /* Move the gradient on hover */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Add a glowing text effect */
+}
+
+.intro-subtitle {
+    color: #A3A3A3;
+    font-size: 25px;
+    margin: 8px 0 200px;
+    /* Adjust bottom margin */
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 16px 44px;
+    background: linear-gradient(45deg, #ffffff -50.49%, #0affa9 89.27%);
+    border: none;
+    border-radius: 16px;
+    color: #000000;
+    font-family: 'Jost';
+    font-size: 21px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease-in-out;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    transform: skewX(-20deg);
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.cta-button:hover {
+    background: linear-gradient(-45deg, #0affa9, #f0e1c6);
+    transform: scale(1.05);
+    transform: translateX(5px);
+}
+
+/* Main Title Section Margin */
+.main-title-section {
+    margin-bottom: 60px;
+    /* Add space between the button and below content */
+}
+
+/* Projects Section */
+.projects {
+    margin-top: 24px;
+    text-align: left;
+}
+
+.projects .small-line {
+    color: #292929;
+    margin: 0px;
+}
+
+
+.projects .section-title {
+    font-size: 50px;
+    font-family: 'Jost', sans-serif;
+    color: #A3A3A3;
+    margin-bottom: 0;
+    /* Remove margin */
+}
+
+.section-subtitle {
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    color: #A3A3A3;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    /* Adjust margin as needed */
+    line-height: normal;
+
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.project-card {
+    padding: 54px 54px;
+    background: linear-gradient(180deg, #0D0D0D 0.67%, #2A2A2A 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    align-items: flex-start;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-bottom: 2px solid #0affa9;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.project-image {
+    height: 208px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #D9D9D9;
+    box-shadow: -8px 8px 6px 0px #3D3D3D;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 32px;
+    font-family: 'Jost';
+    color: transparent;
+    background: linear-gradient(101deg, #CBB792 -6.49%, #0affa9 89.27%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    margin: 10px 0 20px;
+}
+
+.project-description {
+    color: #D1D1D1;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project-type {
+    color: #b3b3b3;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project-card .cta-button {
+    margin-top: 20px;
+    align-self: flex-start;
+
+}
+
+/* Experience Section */
+.experience {
+    margin-top: 40px;
+    text-align: left;
+
+}
+
+.experience .section-title {
+    font-size: 50px;
+    color: #A3A3A3;
+    margin-bottom: 0px;
+}
+
+.experience .small-line {
+    color: #292929;
+    margin: 0px;
+}
+
+.experience-subtitle {
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    color: #A3A3A3;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    /* Adjust margin as needed */
+    line-height: normal;
+
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    padding: 54px 64px;
+    background: linear-gradient(180deg, #0D0D0D 0.67%, #2A2A2A 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    /* Adjust margin as needed */
+    overflow: hidden;
+    /* Ensure no overflow of pseudo-element */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    /* Ensure all paragraphs use Montserrat */
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-left: 2px solid #0affa9;
+    border-right: 2px solid #0affa9;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Quote Section */
+.quote {
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+    background: linear-gradient(101deg, #CBB792 -6.49%, #0affa9 89.27%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 154px;
+}
+
+.author {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    color: #A3A3A3;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Final Call-to-Action Section */
+.final-cta {
+    margin: 100px 0 54px;
+}
+
+.cta-title {
+    font-size: 40px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 0px;
+}
+
+.cta-subtitle {
+    font-size: 25px;
+    color: #A3A3A3;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0px;
+}
+
+.final-cta .cta-button {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #343434;
+}
+
+.all-social-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-links {
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+
+.social-link:hover .social-icon {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.subtitle-line {
+    color: #929292;
+    font-family: 'Jost', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0;
+}

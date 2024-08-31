@@ -717,13 +717,15 @@ body {
 @media (max-width: 768px) {
     body {
         background-color: #000000;
+        
     }
 
     .container {
         max-width: 1080px;
         margin: 0 auto;
         padding: 0px;
-        background: linear-gradient(90deg, #000000, #000a07);
+        scroll-behavior: smooth;
+        /* background: linear-gradient(90deg, #000000, #000a07); */
     }
 
     .header {

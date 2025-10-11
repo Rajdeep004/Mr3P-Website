@@ -494,6 +494,7 @@
 		</div>
 		<div id="cursor-glow"></div>
 
+		<!-- Site Scripts -->
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				// Function to scroll to a specific section with an offset for the header
@@ -678,5 +679,18 @@
 				}, 10000); // 10 seconds
 			});
 		</script>
+
+		<!-- Vercel Analytics Scripts -->
+		<script>
+			window.va =
+				window.va ||
+				function () {
+					(window.vaq = window.vaq || []).push(arguments);
+				};
+		</script>
+		<script
+			defer
+			src="/_vercel/insights/script.js"
+		></script>
 	</body>
 </html>

@@ -1,114 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Parth Panchal Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<link
+			rel="icon"
+			href="//imgs/icons/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parth Panchal Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Montserrat:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="responsivestyles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/ICONS/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="patterns.css">
+	<body>
+		<div class="container">
+			<!-- Header -->
+			<header class="header">
+				<img
+					src="/imgs/icons/logo.png"
+					alt="Parth Panchal"
+					class="logo"
+					onclick="window.location.reload();"
+				/>
+				<div
+					class="hamburger"
+					id="hamburger"
+				>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<nav class="navbar">
+					<a href="#projects">Projects</a>
+					<a href="#experience">Experience</a>
+					<a href="#contact">Contact</a>
+					<a
+						href="https://drive.google.com/file/d/1H513h4bl8dxOCSCZa-BfDA409JXTx53C/view?usp=sharing"
+						class="resume"
+						title="Resume"
+						target="_blank"
+						>Resume</a
+					>
+				</nav>
+			</header>
 
-</head>
+			<!-- Main Title Section -->
+			<section class="main-title-section">
+				<h1 class="main-title">
+					<span class="sparkle-container">
+						<img
+							src="/imgs/icons/sparkle.svg"
+							alt="Sparkle"
+							class="sparkle"
+						/>
+					</span>
+					Chasing <span class="epic">Epic</span> Wins!!
+				</h1>
+				<p class="subtitle-line">- in design, in code, in life</p>
+			</section>
 
-<body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <img src="ICONS/logo.png" alt="Parth Panchal" class="logo" onclick="window.location.reload();">
-            <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav class="navbar">
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-                <a href="https://drive.google.com/file/d/1H513h4bl8dxOCSCZa-BfDA409JXTx53C/view?usp=sharing"
-                    class="resume" title="Resume" target="_blank">Resume</a>
-            </nav>
-        </header>
+			<!-- Introduction Section -->
+			<section class="intro">
+				<h2
+					class="intro-title"
+					id="typewriter"
+				>
+					Hi, I’m Parth Panchal
+				</h2>
+				<p class="intro-subtitle">
+					I shape pixel-perfect designs and create magic with Flutter.
+				</p>
+				<button class="cta-button">
+					Dive into My World
+					<i class="fa fa-chevron-down"></i>
+				</button>
+			</section>
 
-        <!-- Main Title Section -->
-        <section class="main-title-section">
-            <h1 class="main-title">
-                <span class="sparkle-container">
-                    <img src="ICONS/sparkle.svg" alt="Sparkle" class="sparkle">
-                </span>
-                Chasing <span class="epic">Epic</span> Wins!!
-            </h1>
-            <p class="subtitle-line">– in design, in code, in life</p>
-        </section>
+			<!-- Projects Section -->
+			<section
+				id="projects"
+				class="projects"
+			>
+				<h2
+					id="section-title"
+					class="section-title"
+				>
+					Projects
+				</h2>
+				<hr
+					class="small-line"
+					width="80px"
+				/>
+				<p class="section-subtitle">Explore My Latest Creations</p>
+				<div class="projects-grid">
+					<div class="project-card">
+						<p class="project-type">Flutter</p>
+						<div class="project-image">
+							<img
+								class="projects-image"
+								src="/imgs/projects/QuickNews.jpg"
+								alt="Project Image"
+							/>
+						</div>
+						<h3 class="project-title">QuickNews</h3>
+						<p class="project-description">
+							QuickNews is a Flutter app delivering concise,
+							category-based news summaries via an API, offering
+							users a sleek, easy-to-use interface for quick
+							updates.
+						</p>
+						<div class="pill-container">
+							<div class="pill-buttons">
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Flutter
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Dart
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									API
+								</button>
+							</div>
+						</div>
+						<button class="cta-button">
+							Source Code
+							<i class="fa fa-chevron-right"></i>
+						</button>
+					</div>
 
-        <!-- Introduction Section -->
-        <section class="intro">
-            <h2 class="intro-title" id="typewriter">Hi, I’m Parth Panchal</h2>
-            <p class="intro-subtitle">I shape pixel-perfect designs and create magic with Flutter.</p>
-            <button class="cta-button">
-                Dive into My World
-                <i class="fa fa-chevron-down"></i>
-            </button>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h2 id="section-title" class="section-title">Projects</h2>
-            <hr class="small-line" width="80px">
-            <p class="section-subtitle">Explore My Latest Creations</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <p class="project-type">Flutter</p>
-                    <div class="project-image">
-                        <img class="projects-image" src="ProjectImg/QuickNews.jpg" alt="Project Image">
-                    </div>
-                    <h3 class="project-title">QuickNews</h3>
-                    <p class="project-description">QuickNews is a Flutter app delivering concise, category-based news
-                        summaries via an API, offering users a sleek, easy-to-use interface for quick updates.</p>
-                    <div class="pill-container">
-                        <div class="pill-buttons">
-                            <button class="pillbutton" disabled>Flutter</button>
-                            <button class="pillbutton" disabled>Dart</button>
-                            <button class="pillbutton" disabled>API</button>
-                        </div>
-                    </div>
-                    <button class="cta-button">
-                        Source Code
-                        <i class="fa fa-chevron-right"></i>
-                    </button>
-                </div>
-
-                <div class="project-card">
-                    <p class="project-type">Flutter & FlutterFlow</p>
-                    <div class="project-image">
-                        <img class="projects-image" src="ProjectImg/rivinsight.png" alt="Project Image">
-                    </div>
-                    <h3 class="project-title">rivinsight</h3>
-                    <p class="project-description">The Rivinsight app, a winner at Gujarat's SSIP hackathon, uses
-                        advanced technology to provide real-time updates on river conditions and flood risks.</p>
-                    <div class="pill-container">
-                        <div class="pill-buttons">
-                            <button class="pillbutton" disabled>FlutterFlow</button>
-                            <button class="pillbutton" disabled>Flutter</button>
-                            <button class="pillbutton" disabled>Dart</button>
-                            <button class="pillbutton" disabled>Supabase</button>
-                            <button class="pillbutton" disabled>Signal</button>
-                        </div>
-                    </div>
-                    <button class="cta-button" onclick="window.open('https://github.com/TheMr3P/rivinsight', '_blank')">
-                        Source Code
-                        <i class="fa fa-chevron-right"></i>
-                    </button>
-                </div>
-<!--                 <div class="project-card">
+					<div class="project-card">
+						<p class="project-type">Flutter & FlutterFlow</p>
+						<div class="project-image">
+							<img
+								class="projects-image"
+								src="/imgs/projects/rivinsight.png"
+								alt="Project Image"
+							/>
+						</div>
+						<h3 class="project-title">rivinsight</h3>
+						<p class="project-description">
+							The Rivinsight app, a winner at Gujarat's SSIP
+							hackathon, uses advanced technology to provide
+							real-time updates on river conditions and flood
+							risks.
+						</p>
+						<div class="pill-container">
+							<div class="pill-buttons">
+								<button
+									class="pillbutton"
+									disabled
+								>
+									FlutterFlow
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Flutter
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Dart
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Supabase
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Signal
+								</button>
+							</div>
+						</div>
+						<button
+							class="cta-button"
+							onclick="window.open('https://github.com/TheMr3P/rivinsight', '_blank')"
+						>
+							Source Code
+							<i class="fa fa-chevron-right"></i>
+						</button>
+					</div>
+					<!--                 <div class="project-card">
                     <p class="project-type">UX Design & Web Dev.</p>
                     <div class="project-image">
-                        <img class="projects-image" src="ProjectImg/themr3p.png" alt="Project Image">
+                        <img class="projects-image" src="/imgs/projects/themr3p.png" alt="Project Image">
                     </div>
                     <h3 class="project-title">My Portfolio</h3>
                     <p class="project-description">Yes! The portfolio website you’re scrolling through right now?
@@ -127,312 +227,456 @@
                         <i class="fa fa-chevron-right"></i>
                     </button>
                 </div> -->
-                <div class="project-card">
-                    <p class="project-type">UX Design & FLutter App Dev.</p>
-                    <div class="project-image">
-                        <img class="projects-image" src="ProjectImg/habitmate.png" alt="Project Image">
-                    </div>
-                    <h3 class="project-title">HabitMate</h3>
-                    <p class="project-description">A Flutter app for creating and tracking habits, featuring progress analytics and an interactive learning section to help users build and maintain positive daily routines effectively.</p>
-                    <div class="pill-container">
-                        <div class="pill-buttons">
-                            <button class="pillbutton" disabled>Figma</button>
-                            <button class="pillbutton" disabled>Flutter</button>
-                            <button class="pillbutton" disabled>Flutterflow</button>
-<!--                             <button class="pillbutton" disabled>JS</button> -->
-                        </div>
-                    </div>
-                    <button class="cta-button" onclick="window.open('', )">
-                        Source Code
-                        <i class="fa fa-chevron-right"></i>
-                    </button>
-                </div>
-                <div class="project-card">
-                    <div class="coming-soon">
-                        <p class="project-type">UX Design & Web Dev.</p>
-                        <div class="project-image">
-                            <img class="projects-image" src="ProjectImg/comingsoon.png" alt="Project Image">
-                        </div>
-                        <h3 class="project-title">Hehe Wait For It</h3>
-                        <p class="project-description">Very Big Surprice is on the way just wait for it ! it's cooking
-                            up to be something special!
-                        </p>
-                        <div class="pill-container">
-                            <div class="pill-buttons">
-                                <button class="pillbutton" disabled>Figma</button>
-                                <button class="pillbutton" disabled>HTML</button>
-                                <button class="pillbutton" disabled>CSS</button>
-                                <button class="pillbutton" disabled>JS</button>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Coming Soon</p>
-                    <button class="cta-button" onclick="window.open('https://instagram.com/the_mr3p', '_blank')">
-                        For Updates
-                        <i class="fa fa-chevron-right"></i>
-                    </button>
-                </div>
+					<div class="project-card">
+						<p class="project-type">UX Design & FLutter App Dev.</p>
+						<div class="project-image">
+							<img
+								class="projects-image"
+								src="/imgs/projects/habitmate.png"
+								alt="Project Image"
+							/>
+						</div>
+						<h3 class="project-title">HabitMate</h3>
+						<p class="project-description">
+							A Flutter app for creating and tracking habits,
+							featuring progress analytics and an interactive
+							learning section to help users build and maintain
+							positive daily routines effectively.
+						</p>
+						<div class="pill-container">
+							<div class="pill-buttons">
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Figma
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Flutter
+								</button>
+								<button
+									class="pillbutton"
+									disabled
+								>
+									Flutterflow
+								</button>
+								<!--                             <button class="pillbutton" disabled>JS</button> -->
+							</div>
+						</div>
+						<button
+							class="cta-button"
+							onclick="window.open('', )"
+						>
+							Source Code
+							<i class="fa fa-chevron-right"></i>
+						</button>
+					</div>
+					<div class="project-card">
+						<div class="coming-soon">
+							<p class="project-type">UX Design & Web Dev.</p>
+							<div class="project-image">
+								<img
+									class="projects-image"
+									src="/imgs/projects/comingsoon.png"
+									alt="Project Image"
+								/>
+							</div>
+							<h3 class="project-title">Hehe Wait For It</h3>
+							<p class="project-description">
+								Very Big Surprice is on the way just wait for it
+								! it's cooking up to be something special!
+							</p>
+							<div class="pill-container">
+								<div class="pill-buttons">
+									<button
+										class="pillbutton"
+										disabled
+									>
+										Figma
+									</button>
+									<button
+										class="pillbutton"
+										disabled
+									>
+										HTML
+									</button>
+									<button
+										class="pillbutton"
+										disabled
+									>
+										CSS
+									</button>
+									<button
+										class="pillbutton"
+										disabled
+									>
+										JS
+									</button>
+								</div>
+							</div>
+						</div>
+						<p>Coming Soon</p>
+						<button
+							class="cta-button"
+							onclick="window.open('https://instagram.com/the_mr3p', '_blank')"
+						>
+							For Updates
+							<i class="fa fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</section>
 
+			<!-- Experience Section -->
+			<section
+				id="experience"
+				class="experience"
+			>
+				<h2
+					id="section-title"
+					class="section-title"
+				>
+					Experience
+				</h2>
+				<hr
+					class="small-line"
+					width="80px"
+				/>
+				<p class="section-subtitle">
+					Crafting expertise through hands-on challenges.
+				</p>
+				<div class="experience-grid">
+					<div class="experience-card">
+						<p class="exp-title">
+							Thrived in hackathons with innovation.
+						</p>
+						<p class="exp-description">
+							My team and I have participated in various
+							hackathons, where we've gained valuable knowledge
+							and experience. These events are perfect for
+							learning, collaborating, and challenging ourselves
+							to grow.
+						</p>
+					</div>
+					<div class="experience-card">
+						<p class="exp-title">
+							Refined skills through impactful internships.
+						</p>
+						<p class="exp-description">
+							I completed an internship where I deepened my
+							knowledge of the Flutter framework. During this
+							experience, I gained valuable hands-on experience
+							and successfully developed a real-time project.
+						</p>
+					</div>
+					<div class="experience-card">
+						<p class="exp-title">
+							Leading the Travel Companion Web App project.
+						</p>
+						<p class="exp-description">
+							I manage this ongoing project, keeping us on track
+							to meet goals. And as UX Design Lead, I guide the
+							creation of a user-friendly interface and improve
+							the overall user experience
+						</p>
+					</div>
+					<div class="experience-card">
+						<p class="exp-title">
+							Elevating UX design in every college project.
+						</p>
+						<p class="exp-description">
+							I strive to enhance UX design in every college
+							project by applying user-centered principles to
+							create intuitive and engaging experiences.
+						</p>
+					</div>
+				</div>
+			</section>
 
-            </div>
-        </section>
+			<!-- Quote Section -->
+			<section class="quote-section">
+				<p class="quote">
+					"Good design is actually a lot harder to notice than poor
+					design"
+				</p>
+				<p class="author">~Don Norman</p>
+			</section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience">
-            <h2 id="section-title" class="section-title">Experience</h2>
-            <hr class="small-line" width="80px">
-            <p class="section-subtitle">Crafting expertise through hands-on challenges.</p>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <p class="exp-title">Thrived in hackathons with innovation.</p>
-                    <p class="exp-description">My team and I have participated in various hackathons, where we've gained
-                        valuable knowledge and experience. These events are perfect for learning, collaborating, and
-                        challenging ourselves to grow.</p>
-                </div>
-                <div class="experience-card">
-                    <p class="exp-title">Refined skills through impactful internships.</p>
-                    <p class="exp-description">I completed an internship where I deepened my knowledge of the Flutter
-                        framework. During this experience, I gained valuable hands-on experience and successfully
-                        developed a real-time project.</p>
-                </div>
-                <div class="experience-card">
-                    <p class="exp-title">Leading the Travel Companion Web App project.</p>
-                    <p class="exp-description">I manage this ongoing project, keeping us on track to meet goals. And as
-                        UX Design Lead, I guide the creation of a user-friendly interface and improve the overall user
-                        experience</p>
-                </div>
-                <div class="experience-card">
-                    <p class="exp-title">Elevating UX design in every college project.</p>
-                    <p class="exp-description">I strive to enhance UX design in every college project by applying
-                        user-centered principles to create intuitive and engaging experiences.</p>
-                </div>
-            </div>
-        </section>
+			<!-- Final Call-to-Action Section -->
+			<section
+				id="contact"
+				class="final-cta"
+			>
+				<h2 class="cta-title">
+					Ready to transform your ideas into exceptional designs?
+				</h2>
+				<p class="cta-subtitle">
+					Reach out today, Let's work together to make every pixel
+					perfect.
+				</p>
+				<button
+					class="cta-button"
+					onclick="window.open('mailto:themr3p@gmail.com', '_blank')"
+				>
+					Let's Get in Touch
+				</button>
+			</section>
 
-        <!-- Quote Section -->
-        <section class="quote-section">
-            <p class="quote">"Good design is actually a lot harder to notice than poor design"</p>
-            <p class="author">~Don Norman</p>
-        </section>
+			<!-- Footer -->
+			<!-- Footer -->
+			<footer class="footer">
+				<p class="copyright">Copyright © 2024 Parth Panchal</p>
+				<div class="all-social-links">
+					<p>Social Links</p>
+					<div class="social-links">
+						<a
+							href="https://www.instagram.com/the_mr3p"
+							title="Instagram"
+							target="_blank"
+						>
+							<img
+								id="instagram-icon"
+								src="https://api.iconify.design/line-md:instagram.svg"
+								alt="Instagram"
+							/>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/the-mr3p"
+							title="LinkedIn"
+							target="_blank"
+						>
+							<img
+								id="linkedin-icon"
+								src="https://api.iconify.design/line-md:linkedin.svg"
+								alt="LinkedIn"
+							/>
+						</a>
+						<a
+							href="https://twitter.com/the_mr3p"
+							title="X"
+							target="_blank"
+						>
+							<img
+								id="twitter-icon"
+								src="https://api.iconify.design/line-md:twitter-x.svg"
+								alt="Twitter"
+							/>
+						</a>
+						<a
+							href="https://github.com/TheMr3P"
+							title="GitHub"
+							target="_blank"
+						>
+							<img
+								id="github-icon"
+								src="https://api.iconify.design/line-md:github-loop.svg"
+								alt="GitHub"
+							/>
+						</a>
+						<a
+							href="https://www.figma.com/@the_mr3p"
+							title="Figma"
+							target="_blank"
+						>
+							<img
+								id="figma-icon"
+								src="https://api.iconify.design/ph:figma-logo.svg"
+								alt="Figma"
+							/>
+						</a>
+					</div>
+					<h3>• — Thanks For Visit !! — •</h3>
+				</div>
+			</footer>
+		</div>
+		<div id="cursor-glow"></div>
 
-        <!-- Final Call-to-Action Section -->
-        <section id="contact" class="final-cta">
-            <h2 class="cta-title">Ready to transform your ideas into exceptional designs?</h2>
-            <p class="cta-subtitle">Reach out today, Let's work together to make every pixel perfect.</p>
-            <button class="cta-button" onclick="window.open('mailto:themr3p@gmail.com', '_blank')">Let's Get in
-                Touch</button>
-        </section>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Function to scroll to a specific section with an offset for the header
+				function scrollToSection(sectionId) {
+					const headerHeight =
+						document.querySelector(".header").offsetHeight;
+					const section = document.getElementById(sectionId);
+					window.scrollTo({
+						top: section.offsetTop - headerHeight,
+						behavior: "smooth",
+					});
+				}
 
-        <!-- Footer -->
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="copyright">Copyright © 2024 Parth Panchal</p>
-            <div class="all-social-links">
-                <p>Social Links</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/the_mr3p" title="Instagram" target="_blank">
-                        <img id="instagram-icon" src="https://api.iconify.design/line-md:instagram.svg" alt="Instagram">
-                    </a>
-                    <a href="https://www.linkedin.com/in/the-mr3p" title="LinkedIn" target="_blank">
-                        <img id="linkedin-icon" src="https://api.iconify.design/line-md:linkedin.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://twitter.com/the_mr3p" title="X" target="_blank">
-                        <img id="twitter-icon" src="https://api.iconify.design/line-md:twitter-x.svg" alt="Twitter">
-                    </a>
-                    <a href="https://github.com/TheMr3P" title="GitHub" target="_blank">
-                        <img id="github-icon" src="https://api.iconify.design/line-md:github-loop.svg" alt="GitHub">
-                    </a>
-                    <a href="https://www.figma.com/@the_mr3p" title="Figma" target="_blank">
-                        <img id="figma-icon" src="https://api.iconify.design/ph:figma-logo.svg" alt="Figma">
-                    </a>
-                </div>
-                <h3>• — Thanks For Visit !! — •</h3>
-            </div>
-        </footer>
+				// Add event listener to CTA button
+				document
+					.querySelector(".cta-button")
+					.addEventListener("click", function () {
+						scrollToSection("projects");
+					});
 
-    </div>
-    <div id="cursor-glow"></div>
+				// Add event listeners to nav links
+				document
+					.querySelectorAll(".navbar a:not(.resume)")
+					.forEach((anchor) => {
+						anchor.addEventListener("click", function (e) {
+							e.preventDefault();
+							const targetId =
+								this.getAttribute("href").substring(1);
+							scrollToSection(targetId);
+						});
+					});
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Function to scroll to a specific section with an offset for the header
-            function scrollToSection(sectionId) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const section = document.getElementById(sectionId);
-                window.scrollTo({
-                    top: section.offsetTop - headerHeight,
-                    behavior: 'smooth'
-                });
-            }
+				// Ensure page starts at the top on load
+				window.scrollTo(0, 0);
+			});
 
-            // Add event listener to CTA button
-            document.querySelector('.cta-button').addEventListener('click', function () {
-                scrollToSection('projects');
-            });
+			// Script For social media icons
 
-            // Add event listeners to nav links
-            document.querySelectorAll('.navbar a:not(.resume)').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    scrollToSection(targetId);
-                });
-            });
+			document.addEventListener("DOMContentLoaded", function () {
+				const iconElements = {
+					instagram: document.getElementById("instagram-icon"),
+					linkedin: document.getElementById("linkedin-icon"),
+					twitter: document.getElementById("twitter-icon"),
+					github: document.getElementById("github-icon"),
+					figma: document.getElementById("figma-icon"),
+				};
 
-            // Ensure page starts at the top on load
-            window.scrollTo(0, 0);
-        });
+				const iconUrls = {
+					instagram:
+						"https://api.iconify.design/line-md:instagram.svg",
+					linkedin: "https://api.iconify.design/line-md:linkedin.svg",
+					twitter: "https://api.iconify.design/line-md:twitter-x.svg",
+					github: "https://api.iconify.design/line-md:github-loop.svg",
+					figma: "https://api.iconify.design/ph:figma-logo.svg",
+				};
 
+				const interval = 6000; // 6 seconds for animation cycle
+				let animationStarted = false; // Flag to prevent multiple intervals
 
-        // Script For social media icons 
+				function reloadIcons() {
+					Object.keys(iconElements).forEach((platform) => {
+						if (platform !== "figma") {
+							const icon = iconElements[platform];
+							// Force reload by appending a timestamp query parameter
+							icon.src = `${
+								iconUrls[platform]
+							}?${new Date().getTime()}`;
+						}
+					});
+				}
 
-        document.addEventListener('DOMContentLoaded', function () {
-            const iconElements = {
-                instagram: document.getElementById('instagram-icon'),
-                linkedin: document.getElementById('linkedin-icon'),
-                twitter: document.getElementById('twitter-icon'),
-                github: document.getElementById('github-icon'),
-                figma: document.getElementById('figma-icon')
-            };
+				function restartFigmaIconAnimation() {
+					const figmaIcon = iconElements["figma"];
+					// Remove the animation class to reset the animation
+					figmaIcon.style.animation = "none";
+					// Trigger reflow/repaint to restart the animation
+					void figmaIcon.offsetWidth; // Trigger reflow
+					// Reapply the animation
+					figmaIcon.style.animation = "fadeIn 500ms ease-in forwards";
+				}
 
-            const iconUrls = {
-                instagram: "https://api.iconify.design/line-md:instagram.svg",
-                linkedin: "https://api.iconify.design/line-md:linkedin.svg",
-                twitter: "https://api.iconify.design/line-md:twitter-x.svg",
-                github: "https://api.iconify.design/line-md:github-loop.svg",
-                figma: "https://api.iconify.design/ph:figma-logo.svg"
-            };
+				function startAnimation() {
+					if (!animationStarted) {
+						animationStarted = true; // Set the flag to true to prevent multiple intervals
+						setInterval(reloadIcons, interval);
+						setInterval(restartFigmaIconAnimation, interval);
+						restartFigmaIconAnimation(); // Initial call to start the animation
+					}
+				}
 
-            const interval = 6000; // 6 seconds for animation cycle
-            let animationStarted = false; // Flag to prevent multiple intervals
+				// Function to check if user is near the bottom of the page
+				function checkScrollPosition() {
+					const scrollableHeight =
+						document.documentElement.scrollHeight -
+						window.innerHeight; // Total scrollable height
+					const currentScroll = window.scrollY || window.pageYOffset; // Current scroll position
 
-            function reloadIcons() {
-                Object.keys(iconElements).forEach(platform => {
-                    if (platform !== 'figma') {
-                        const icon = iconElements[platform];
-                        // Force reload by appending a timestamp query parameter
-                        icon.src = `${iconUrls[platform]}?${new Date().getTime()}`;
-                    }
-                });
-            }
+					// Check if user is within 100px of the bottom
+					if (currentScroll >= scrollableHeight - 100) {
+						startAnimation();
+					}
+				}
 
-            function restartFigmaIconAnimation() {
-                const figmaIcon = iconElements['figma'];
-                // Remove the animation class to reset the animation
-                figmaIcon.style.animation = 'none';
-                // Trigger reflow/repaint to restart the animation
-                void figmaIcon.offsetWidth; // Trigger reflow
-                // Reapply the animation
-                figmaIcon.style.animation = 'fadeIn 500ms ease-in forwards';
-            }
+				// Add scroll event listener with a small delay to optimize performance
+				let isThrottled = false;
+				window.addEventListener("scroll", function () {
+					if (!isThrottled) {
+						isThrottled = true;
+						setTimeout(function () {
+							checkScrollPosition();
+							isThrottled = false;
+						}, 200); // 200ms delay
+					}
+				});
+			});
 
-            function startAnimation() {
-                if (!animationStarted) {
-                    animationStarted = true; // Set the flag to true to prevent multiple intervals
-                    setInterval(reloadIcons, interval);
-                    setInterval(restartFigmaIconAnimation, interval);
-                    restartFigmaIconAnimation(); // Initial call to start the animation
-                }
-            }
+			//Social Icon Animation over
 
-            // Function to check if user is near the bottom of the page
-            function checkScrollPosition() {
-                const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
-                const currentScroll = window.scrollY || window.pageYOffset; // Current scroll position
+			//-in design, in code, in life hover effect
+			document.addEventListener("DOMContentLoaded", function () {
+				const subtitle = document.querySelector(".subtitle-line");
 
-                // Check if user is within 100px of the bottom
-                if (currentScroll >= scrollableHeight - 100) {
-                    startAnimation();
-                }
-            }
+				subtitle.addEventListener("mousemove", function (event) {
+					const rect = subtitle.getBoundingClientRect();
+					const mouseX = event.clientX - rect.left;
+					const mouseY = event.clientY - rect.top;
+					const width = rect.width;
+					const height = rect.height;
 
-            // Add scroll event listener with a small delay to optimize performance
-            let isThrottled = false;
-            window.addEventListener('scroll', function () {
-                if (!isThrottled) {
-                    isThrottled = true;
-                    setTimeout(function () {
-                        checkScrollPosition();
-                        isThrottled = false;
-                    }, 200); // 200ms delay
-                }
-            });
-        });
+					// Calculate the intensity of the glow based on mouse position
+					const intensityX = (mouseX / width) * 20 - 10; // Adjust range and scale as needed
+					const intensityY = (mouseY / height) * 20 - 10; // Adjust range and scale as needed
 
+					subtitle.style.textShadow = `${intensityX}px ${intensityY}px 15px rgba(255, 255, 255, 0.8)`;
+				});
 
-        //Social Icon Animation over
+				subtitle.addEventListener("mouseleave", function () {
+					subtitle.style.textShadow = "none"; // Reset the text-shadow when the mouse leaves
+				});
+			});
 
+			//moves the cursor glow
+			document.addEventListener("mousemove", function (e) {
+				const cursorGlow = document.getElementById("cursor-glow");
+				cursorGlow.style.left = e.pageX - 10 + "px";
+				cursorGlow.style.top = e.pageY - 4 + "px";
+			});
 
-        //-in design, in code, in life hover effect
-        document.addEventListener('DOMContentLoaded', function () {
-            const subtitle = document.querySelector('.subtitle-line');
+			//TypeWriter Effect
+			document.addEventListener("DOMContentLoaded", function () {
+				const typewriterElement = document.getElementById("typewriter");
+				const typewriterText = typewriterElement.textContent;
+				let index = 0;
+				let isTyping = false;
 
-            subtitle.addEventListener('mousemove', function (event) {
-                const rect = subtitle.getBoundingClientRect();
-                const mouseX = event.clientX - rect.left;
-                const mouseY = event.clientY - rect.top;
-                const width = rect.width;
-                const height = rect.height;
+				function type() {
+					if (index < typewriterText.length) {
+						typewriterElement.innerHTML +=
+							typewriterText.charAt(index);
+						index++;
+						setTimeout(type, 100); // Adjust typing speed here
+					} else {
+						isTyping = false; // Typing is complete
+					}
+				}
 
-                // Calculate the intensity of the glow based on mouse position
-                const intensityX = (mouseX / width) * 20 - 10; // Adjust range and scale as needed
-                const intensityY = (mouseY / height) * 20 - 10; // Adjust range and scale as needed
+				function startTyping() {
+					if (!isTyping) {
+						isTyping = true;
+						index = 0;
+						typewriterElement.innerHTML = ""; // Clear the text
+						type();
+					}
+				}
 
-                subtitle.style.textShadow = `${intensityX}px ${intensityY}px 15px rgba(255, 255, 255, 0.8)`;
-            });
+				// Start typing when the page loads
+				startTyping();
 
-            subtitle.addEventListener('mouseleave', function () {
-                subtitle.style.textShadow = 'none'; // Reset the text-shadow when the mouse leaves
-            });
-        });
-
-        //moves the cursor glow
-        document.addEventListener('mousemove', function (e) {
-            const cursorGlow = document.getElementById('cursor-glow');
-            cursorGlow.style.left = (e.pageX - 10) + 'px';
-            cursorGlow.style.top = (e.pageY - 4) + 'px';
-        });
-
-
-        //TypeWriter Effect
-        document.addEventListener("DOMContentLoaded", function () {
-            const typewriterElement = document.getElementById("typewriter");
-            const typewriterText = typewriterElement.textContent;
-            let index = 0;
-            let isTyping = false;
-
-            function type() {
-                if (index < typewriterText.length) {
-                    typewriterElement.innerHTML += typewriterText.charAt(index);
-                    index++;
-                    setTimeout(type, 100); // Adjust typing speed here
-                } else {
-                    isTyping = false; // Typing is complete
-                }
-            }
-
-            function startTyping() {
-                if (!isTyping) {
-                    isTyping = true;
-                    index = 0;
-                    typewriterElement.innerHTML = ""; // Clear the text
-                    type();
-                }
-            }
-
-            // Start typing when the page loads
-            startTyping();
-
-            // Repeat the typing effect every 10 seconds
-            setInterval(function () {
-                startTyping();
-            }, 10000); // 10 seconds
-        });
-
-
-
-
-    </script>
-</body>
-
+				// Repeat the typing effect every 10 seconds
+				setInterval(function () {
+					startTyping();
+				}, 10000); // 10 seconds
+			});
+		</script>
+	</body>
 </html>
